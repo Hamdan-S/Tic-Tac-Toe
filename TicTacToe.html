@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #A78458;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 5%;
+}
+
+input {
+  margin: 1%;
+  width: 2%;
+  height: 50px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+}
+
+input:hover{
+    background-color: #48403C;
+}
+
+input[type="text"]{
+      background-color: #ee4f00;
+}
+
+button{
+    width: 2%;
+    height: 30px;
+    border-radius: 20px;
+    text-transform: lowercase;
+    color: white;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+button:hover{
+    color: #292F26;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@keyframes HoverWhiteToDark{
+  from {background-color: #48403C;}
+  to{background-color: #934334;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 40%;
+   transform: scale(1.2);
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+button{
+    width: 20%;
+    border-radius: 20px;
+    text-transform: lowercase;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+input {
+  margin: 1%;
+  width: 10%;
+  height: 50px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 981px) and (max-width: 4024px) {
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 5%;
+   transform: scale(1);
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+  button{
+    width: 20%;
+    border-radius: 20px;
+    font-size: large;
+    text-transform: lowercase;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+input {
+  margin: 1%;
+  width: 2.6%;
+  height: 3.5rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+}
+}
+
+#tictactoeSVG{
+  margin-top: -9%;
+    transform: rotate(12deg);
+}
+
+    </style>
+</head>
+<body>
+<div id="board">
+  <input id="box1" />
+  <input id="box2" />
+  <input id="box3" />
+  <br />
+  <input id="box4" />
+  <input id="box5" />
+  <input id="box6" />
+  <br />
+  <input id="box7" />
+  <input id="box8" />
+  <input id="box9" />
+  <br />
+</div>
+<div class="menu">
+  <button type="button" id="startBtn" onclick="startGame()">Start</button>  </div>
+  <button type="button" id="EnterInput" onclick="checkBoxes()">Place</button>
+  <p id="pTurn">Plyr Turn:</p>
+
+  <script src="TicTacToeScript.js"></script>
+</body>
+</html>
